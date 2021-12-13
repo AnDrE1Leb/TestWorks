@@ -1,0 +1,61 @@
+.container {
+  margin: 0 auto;
+}
+.container h1 {
+  text-align: center;
+}
+.container .lenta {
+  font-size: 25px;
+  margin-top: 50px;
+}
+.container .lenta .lenta_card {
+  text-align: center;
+}
+.container .lenta .lenta_card .image_lenta {
+  width: 100px;
+  margin: 0 auto;
+}
+.container .lenta .lenta_card .image_lenta img {
+  max-width: 100%;
+}
+.container .lenta .lenta_card .dropdown {
+  border: 1px solid black;
+  padding: 20px 0;
+  display: none;
+  position: relative;
+}
+.container .lenta .lenta_card .dropdown:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 25px 25px 25px;
+  border-color: transparent transparent #000000 transparent;
+  top: -25px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+}
+.container .lenta .lenta_card .dropdown .person_photo {
+  width: 50px;
+  margin: 0 auto;
+}
+.container .lenta .lenta_card .dropdown .person_photo img {
+  max-width: 100%;
+}
+.container .lenta .lenta_card .dropdown .person_name {
+  padding: 10px 0 0;
+}
+.container .lenta .lenta_card .dropdown .person_name p {
+  font-size: 16px;
+}
+
+.lenta_card:hover .dropdown {
+  display: block !important;
+}
+
+.new_card {
+  background: blue;
+}

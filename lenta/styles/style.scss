@@ -1,0 +1,71 @@
+.container {
+  margin: 0 auto;
+
+  h1 {
+    text-align: center;
+  }
+
+  .lenta {
+    font-size: 25px;
+    margin-top: 50px;
+
+    .lenta_card {
+      text-align: center;
+
+      .image_lenta {
+        width: 100px;
+        margin: 0 auto;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .dropdown {
+        border: 1px solid black;
+        padding: 20px 0;
+        display: none;
+        position: relative;
+
+        &:before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 25px 25px 25px;
+          border-color: transparent transparent #000000 transparent;
+          top: -25px;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+
+        .person_photo {
+          width: 50px;
+          margin: 0 auto;
+
+          img {
+            max-width: 100%;
+          }
+        }
+
+        .person_name {
+          padding: 10px 0 0;
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.lenta_card:hover .dropdown {
+  display: block!important;
+}
+
+.new_card {
+  background: blue;
+}
